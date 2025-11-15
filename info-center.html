@@ -18,6 +18,9 @@
           <svg class="header__menu-icon" width="60" height="23" aria-hidden="true">
             <use xlink:href="images/sprite.svg#icon-menu"></use>
           </svg>
+          <svg class="header__menu-icon-close visually-hidden" width="40" height="40" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-close"></use>
+          </svg>
         </button>
         <a class="header__logo-link" href="#" aria-label="Переход на главную страницу">
           <svg class="header__logo" width="114" height="26" aria-hidden="true">
@@ -39,8 +42,281 @@
   </div>
 </header>
 <main>
-  <h1 class="visually-hidden">Информационный центр</h1>
-
+  <section class="info">
+    <div class="container">
+      <h1 class="visually-hidden">Информационный центр</h1>
+      <div class="info__top">
+        <ul class="info__links-list">
+          <li class="info__links-item">
+            <a class="btn btn--black info__links-btn" href="#">
+              Все
+            </a>
+          </li>
+          <li class="info__links-item">
+            <a class="btn  info__links-btn" href="#">
+              Sminex
+            </a>
+          </li>
+          <li class="info__links-item">
+            <a class="btn info__links-btn" href="#">
+              Малая Ордынка&nbsp;19
+            </a>
+          </li>
+          <li class="info__links-item">
+            <a class="btn info__links-btn" href="#">
+              Ильинка 3/8
+            </a>
+          </li>
+          <li class="info__links-item">
+            <a class="btn info__links-btn" href="#">
+              Городская усадьба
+            </a>
+          </li>
+          <li class="info__links-item">
+            <a class="btn info__links-btn" href="#" >
+              Врубеля&nbsp;4
+            </a>
+          </li>
+          <li class="info__links-item">
+            <a class="btn info__links-btn" href="#">
+              Фрунзенская набережная
+            </a>
+          </li>
+          <li class="info__links-item">
+            <a class="btn info__links-btn" href="#">
+              Достижение
+            </a>
+          </li>
+          <li class="info__links-item">
+            <a class="btn info__links-btn" href="#">
+              Тишинский бульвар
+            </a>
+          </li>
+          <li class="info__links-item">
+            <a class="btn info__links-btn" href="#">
+              Вестердам
+            </a>
+          </li>
+          <li class="info__links-item">
+            <a class="btn info__links-btn" href="#">
+              Лаврушинский
+            </a>
+          </li>
+          <li class="info__links-item">
+            <a class="btn info__links-btn" href="#">
+              Обыденский &#8470;&nbsp;1
+            </a>
+          </li>
+          <li class="info__links-item">
+            <a class="btn info__links-btn" href="#">
+              West Garden
+            </a>
+          </li>
+          <li class="info__links-item">
+            <a class="btn info__links-btn" href="#">
+              Чистые пруды
+            </a>
+          </li>
+          <li class="info__links-item">
+            <a class="btn info__links-btn" href="#">
+              LIFE TIME
+            </a>
+          </li>
+          <li class="info__links-item">
+            <a class="btn info__links-btn" href="#">
+              TWIST
+            </a>
+          </li>
+        </ul>
+        <div class="info__top-buttons">
+          <button class="info__top-all" type="button">
+          Все проекты
+        </button>
+        <div class="info__top-togglers">
+          <button class="info__top-toggler" id="list-view" type="button" >
+            <svg class="info__top-toggler-icon" width="24" height="14" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-list"></use>
+            </svg>
+            <span class="info__top-toggler-text">
+              Списком
+            </span>
+          </button>
+          <button class="info__top-toggler" id="grid-view" type="button" >
+            <svg class="info__top-toggler-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-grid"></use>
+            </svg>
+            <span class="info__top-toggler-text">
+              Плиткой
+            </span>
+          </button>
+        </div>
+        </div>
+        
+        
+      </div>
+      <ul class="info__list">
+        <li class="info__list-item">
+          <a href="#" class="info-card">
+            <picture class="info-card__picture">
+              <img class="info-card__img" width="340" height="220"  src="images/news/img-1-list.jpg" alt="Клубный дом Чистые пруды" srcset="images/news/img-1-list@2x.jpg 2x">
+            </picture>
+            <div class="info-card__head">
+              <h2 class="info-card__title">
+                Sminex приступил к&nbsp;фасадным работам в&nbsp;клубном доме &laquo;Чистые Пруды&raquo;
+              </h2>
+              <time class="info-card__time" datetime="04.14.2024">
+                12&nbsp;апреля 2024
+              </time>
+              <button  type="button" class="btn info-card__btn">
+                Чистые пруды
+              </button>
+            </div>
+            <div class="info-card__content">
+              <p class="info-card__text">
+                Девелопер реставрирует кирпичную кладку наружных стен здания, построенного в 1915 году по проекту архитектора Отто фон Дессина. Завершить фасадные работы планируется в декабре этого года. Клубный дом «Чистые Пруды» расположен в глубине тихого Потаповского переулка, в 50 метрах от знаменитого одноимённого пруда. Sminex проводит бережную реконструкцию здания, чтобы сохранить его изысканную ...
+              </p>
+            </div>
+          </a>
+        </li>
+        <li class="info__list-item">
+          <a href="#" class="info-card">
+            <picture class="info-card__picture">
+              <img class="info-card__img" width="340" height="220"  src="images/news/img-2-list.jpg" alt="Чистые пруды" srcset="images/news/img-2-list@2x.jpg 2x">
+            </picture>
+            <div class="info-card__head">
+              <h2 class="info-card__title">
+                &laquo;Дзен&raquo;. Главные места и&nbsp;секреты Чистых прудов
+              </h2>
+              <time class="info-card__time" datetime="04.08.2024">
+                8&nbsp;апреля 2024
+              </time>
+              <button  type="button" class="btn info-card__btn">
+                Чистые пруды
+              </button>
+            </div>
+            <div class="info-card__content">
+              <p class="info-card__text">
+               Чистые пруды хранят дух исконной Москвы и&nbsp;при этом обладают всеми преимуществами мегаполиса. Здесь есть свои тайны, знаковые места и&nbsp;современные пентхаусы.
+              </p>
+              <ul class="info-card__list">
+                <li class="info-card__item">
+                  Как Чистые пруды стали чистыми и&nbsp;при чём тут британцы?
+                </li>
+                <li class="info-card__item">
+                  Что Булгаков переместил с&nbsp;Чистых прудов на&nbsp;Патриаршие в&nbsp;романе &laquo;Мастер и&nbsp;Маргарита&raquo;?
+                </li>
+                <li class="info-card__item">
+                  Как доходный дом начала&nbsp;ХХ века получил новое содержание и&nbsp;стал клубным?
+                </li>
+              </ul>
+            </div>
+          </a>
+        </li>
+        <li class="info__list-item">
+          <a href="#" class="info-card">
+            <picture class="info-card__picture">
+              <img class="info-card__img" width="340" height="220"  src="images/news/img-3-list.jpg" alt="Остоженка" srcset="images/news/img-3-list@2x.jpg 2x">
+            </picture>
+            <div class="info-card__head">
+              <h2 class="info-card__title">
+                Высокий спрос привёл к&nbsp;росту цен на&nbsp;элитную недвижимость Остоженки
+              </h2>
+              <time class="info-card__time" datetime="04.04.2024">
+                4&nbsp;апреля 2024
+              </time>
+            </div>
+            <div class="info-card__content">
+              <p class="info-card__text">
+                В&nbsp;2023 году объем предложения элитных квартир в&nbsp;районе Остоженки составил 29,9&nbsp;тыс.&nbsp;кв.&nbsp;м, а&nbsp;к&nbsp;концу&nbsp;I квартала 2024-го он&nbsp;уменьшился до&nbsp;26,8&nbsp;кв.&nbsp;м. Сейчас здесь продаются четыре строящихся дома. На&nbsp;фоне уменьшения предложения средняя стоимость&nbsp;кв.&nbsp;м&nbsp;в&nbsp;них за&nbsp;прошедший год увеличилась на&nbsp;23%&nbsp;&mdash; с&nbsp;2,5 до&nbsp;3,1 млн рублей. Самые дорогие лоты&nbsp;&mdash; пентхаусы&nbsp;&mdash; выросли в&nbsp;цене на&nbsp;16%, с&nbsp;4,3 до&nbsp;5&nbsp;млн рублей ...
+              </p>
+            </div>
+          </a>
+        </li>
+        <li class="info__list-item">
+          <a href="#" class="info-card">
+            <picture class="info-card__picture">
+              <img class="info-card__img" width="340" height="220"  src="images/news/img-4-list.jpg" alt="всесезонный двор-сад" srcset="images/news/img-4-list@2x.jpg 2x">
+            </picture>
+            <div class="info-card__head">
+              <h2 class="info-card__title">
+                Sminex создаёт самый близкий к&nbsp;Кремлю всесезонный двор-сад
+              </h2>
+              <time class="info-card__time" datetime="04.04.2024">
+                4 апреля 2024
+              </time>
+              <button  type="button" class="btn info-card__btn">
+                Ильинка 3/8
+              </button>
+            </div>
+            <div class="info-card__content">
+              <p class="info-card__text">
+                В&nbsp;коллекции клубных особняков &laquo;Ильинка 3/8&raquo; благоустройство занимает 1700&nbsp;кв.&nbsp;м. Девелопер представил концепцию двора-сада, в&nbsp;которой гармонично соединяет исторические детали XIX века и&nbsp;современные технологии комфорта. В&nbsp;приватном пространстве жители наслаждаются цветущим круглый год садом&nbsp;&mdash; всего в&nbsp;ботанической коллекции больше 6600&nbsp;растений. Территория клубных особняков в&nbsp;160 метрах от&nbsp;Красной площади начинается ...
+              </p>
+            </div>
+          </a>
+        </li>
+        <li class="info__list-item">
+          <a href="#" class="info-card">
+            <picture class="info-card__picture">
+              <img class="info-card__img" width="340" height="220"  src="images/news/img-5-list.jpg" alt="всесезонный двор-сад" srcset="images/news/img-5-list@2x.jpg 2x">
+            </picture>
+            <div class="info-card__head">
+                  <h2 class="info-card__title">
+                   Видео. Ювелирное воссоздание барельефов &laquo;Ильинки 3/8&raquo;
+                  </h2>
+                  <time class="info-card__time" datetime="04.03.2024">
+                    3&nbsp;апреля 2024
+                  </time>
+                  <button  type="button" class="btn info-card__btn">
+                    Ильинка 3/8
+                  </button>
+            </div>
+            <div class="info-card__content">
+                <p class="info-card__text">
+                  Грифон, пардус, лев и&nbsp;птица Сирин&nbsp;&mdash; существа из&nbsp;славянской мифологии. Они символизируют величие, изящество, благородство и&nbsp;радость. Барельефы с&nbsp;этими волшебными созданиями охраняют покой и&nbsp;благополучие жителей &laquo;Ильинки 3/8&raquo;, создавая неповторимый облик клубных особняков в&nbsp;160 метрах от&nbsp;Красной площади. Об&nbsp;идее создания артефактов и&nbsp;её&nbsp;воплощении в&nbsp;камне руками иранских мастеров смотрите в&nbsp;новом видео ...
+                </p>
+            </div>
+          </a>
+        </li>
+        <li class="info__list-item">
+          <a href="#" class="info-card">
+            <picture class="info-card__picture">
+              <img class="info-card__img" width="340" height="220"  src="images/news/img-6-list.jpg" alt="Бионические фасады" srcset="images/news/img-6-list@2x.jpg 2x">
+            </picture>
+              <div class="info-card__head">
+                  <h2 class="info-card__title">
+                    РБК. Пять зданий с&nbsp;эффектной архитектурой, которые скоро построят в&nbsp;Москве
+                  </h2>
+                    <time class="info-card__time" datetime="04.03.2024">
+                      3 апреля 2024
+                    </time>
+              </div>
+                <div class="info-card__content">
+                    <p class="info-card__text">
+                      Редакция &laquo;РБК-Недвижимости&raquo; заглянула в&nbsp;будущее и&nbsp;выбрала пять новых архитектурных символов, которые скоро появятся в&nbsp;Москве.
+                    </p>
+                    <ul class="info-card__list">
+                      <li class="info-card__item">
+                        Технопарк со&nbsp;светопрозрачным фасадом в&nbsp;неофутуристичном стиле
+                      </li>
+                      <li class="info-card__item">
+                        Бионические фасады с&nbsp;окнами, из&nbsp;которых открываются панорамы Кремля
+                      </li>
+                      <li class="info-card__item">
+                        Музей в&nbsp;стиле необрутализма на&nbsp;территории монастыря
+                      </li>
+                      <li class="info-card__item">
+                        Школа будущего как из&nbsp;произведений ...
+                      </li>
+                    </ul>
+                    
+                </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
 </main>
 </body>
 
