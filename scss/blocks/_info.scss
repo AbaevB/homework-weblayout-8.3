@@ -1,0 +1,86 @@
+.info{
+  padding: 20px 20px 0;
+
+  &__top  {
+    padding: 20px 0;
+     border-bottom: 1px solid $color-iron;
+  }
+
+  &__form {
+    display: flex;
+     flex-wrap: wrap;
+     column-gap: 11px;
+    row-gap: 10px;
+    margin: 0 0 40px;
+
+
+  }
+
+  &__top-all  {
+    display: none;
+  }
+
+  &__top-togglers  {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__top-toggler  {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: $color-mischka;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $color-blue-charcoa;
+    }
+
+    &:focus-visible {
+      color: $color-blue-charcoa;
+    }
+
+    &:active  {
+      color: $color-blue-charcoa;
+    }
+  }
+
+  &__top-toggler-icon {
+    flex-shrink: 0;
+  }
+
+  &__top-toggler-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+
+
+
+
+  &__list {
+    @include list-reset;
+
+
+    &-item  {
+      overflow: hidden;
+    }
+
+    .info__list-item:not(:first-child) .info-card {
+      border-top: 1px solid $color-iron;
+    }
+
+    &--grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 40px 0 0;
+    }
+  }
+}
