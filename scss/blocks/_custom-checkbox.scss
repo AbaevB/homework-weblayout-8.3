@@ -1,0 +1,35 @@
+.custom-checkbox  {
+
+
+
+  &__label  {
+    display: block;
+    padding: 8px 16px;
+    background-color: $color-ecru-white;
+    border-radius: 16px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-blue-charcoa;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out,;
+
+    &:hover {
+      background-color: $color-chrome-white;
+    }
+
+    &:focus-visible {
+      background-color: $color-chrome-white;
+    }
+  }
+
+  &__field:checked+.custom-checkbox__label{
+    background-color: $color-blue-charcoa;
+    color: $color-white;
+  }
+
+
+
+
+
+}
