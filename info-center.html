@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Информационный центр - Sminex - ИНТЕКО</title>
   <link href="css/style.css" rel="stylesheet">
-  <script defer src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -164,9 +164,9 @@
       <h1 class="visually-hidden">Информационный центр</h1>
       <div class="info__top">
         <form class="info__form" method="post" action="#">
-          <div class="custom-checkbox">
+          <div class="custom-checkbox custom-checkbox--all">
             <input class="custom-checkbox__field visually-hidden" id="all" type="checkbox" name="all" checked="true">
-            <label class="custom-checkbox__label" for="all">Все</label>
+            <label class="custom-checkbox__label" for="all">Все <span class="custom-checkbox__hidden-text">проекты</span> </label>
           </div>
           <div class="custom-checkbox">
               <input class="custom-checkbox__field visually-hidden" id="sminex" type="checkbox" name="sminex">
@@ -230,28 +230,26 @@
           </div>
         </form>
 
-        <div class="info__top-buttons">
-          <button class="info__top-all" type="button">
-          Все проекты
-        </button>
-        <div class="info__top-togglers">
-          <button class="info__top-toggler" id="list-view" type="button">
-            <svg class="info__top-toggler-icon" aria-hidden="true" width="24" height="14">
-              <use xlink:href="images/sprite.svg#icon-list"></use>
-            </svg>
-            <span class="info__top-toggler-text">
-              Списком
-            </span>
-          </button>
-          <button class="info__top-toggler" id="grid-view" type="button">
-            <svg class="info__top-toggler-icon" aria-hidden="true" width="24" height="24">
-              <use xlink:href="images/sprite.svg#icon-grid"></use>
-            </svg>
-            <span class="info__top-toggler-text">
-              Плиткой
-            </span>
-          </button>
-        </div>
+
+
+          <div class="info__top-togglers">
+            <button class="info__top-toggler" id="list-view" type="button">
+              <svg class="info__top-toggler-icon" aria-hidden="true" width="24" height="14">
+                <use xlink:href="images/sprite.svg#icon-list"></use>
+              </svg>
+              <span class="info__top-toggler-text">
+                Списком
+              </span>
+            </button>
+            <button class="info__top-toggler" id="grid-view" type="button">
+              <svg class="info__top-toggler-icon" aria-hidden="true" width="24" height="24">
+                <use xlink:href="images/sprite.svg#icon-grid"></use>
+              </svg>
+              <span class="info__top-toggler-text">
+                Плиткой
+              </span>
+            </button>
+
         </div>
 
 
@@ -262,12 +260,12 @@
             <picture class="info-card__picture ">
               <source media="(max-width: 767px)" srcset="images/news/img-1-list-mobile.jpg 1x, images/news/img-1-list-mobile@2x.jpg 2x">
               <source media="(max-width: 1023px)" srcset="images/news/img-1-list-tablet.jpg 1x, images/news/img-1-list-tablet@2x.jpg 2x">
-              <img class="info-card__img" width="340" height="220" src="images/news/img-1-list.jpg" width="340" height="220" alt="Чистые пруды" srcset="images/news/img-1-list@2x.jpg 2x">
+              <img class="info-card__img" src="images/news/img-1-list.jpg" width="340" height="220" alt="Чистые пруды" srcset="images/news/img-1-list@2x.jpg 2x">
             </picture>
             <picture class="info-card__picture info-card__picture--grid">
               <source media="(max-width: 767px)" srcset="images/news/img-1-grid-mobile.jpg 1x, images/news/img-1-grid-mobile@2x.jpg 2x">
               <source media="(max-width: 1023px)" srcset="images/news/img-1-grid-tablet.jpg 1x, images/news/img-1-grid-tablet@2x.jpg 2x">
-              <img class="info-card__img info-card__img--grid" width="674" height="360" src="images/news/img-1-grid.jpg" alt="Чистые пруды" srcset="images/news/img-1-grid@2x.jpg 2x">
+              <img class="info-card__img info-card__img--grid" src="images/news/img-1-grid.jpg" width="674" height="360" alt="Чистые пруды" srcset="images/news/img-1-grid@2x.jpg 2x">
             </picture>
             <div class="info-card__head">
               <h2 class="info-card__title">
@@ -292,12 +290,12 @@
             <picture class="info-card__picture">
               <source media="(max-width: 767px)" srcset="images/news/img-2-list-mobile.jpg 1x, images/news/img-2-list-mobile@2x.jpg 2x">
               <source media="(max-width: 1023px)" srcset="images/news/img-2-list-tablet.jpg 1x, images/news/img-2-list-tablet@2x.jpg 2x">
-              <img class="info-card__img" width="340" height="220" src="images/news/img-2-list.jpg" alt srcset="images/news/img-2-list@2x.jpg 2x">
+              <img class="info-card__img" src="images/news/img-2-list.jpg" width="340" height="220" alt srcset="images/news/img-2-list@2x.jpg 2x">
             </picture>
             <picture class="info-card__picture info-card__picture--grid">
               <source media="(max-width: 767px)" srcset="images/news/img-2-grid-mobile.jpg 1x, images/news/img-2-grid-mobile@2x.jpg 2x">
               <source media="(max-width: 1023px)" srcset="images/news/img-2-grid-tablet.jpg 1x, images/news/img-2-grid-tablet@2x.jpg 2x">
-              <img  class="info-card__img info-card__img--grid" width="674" height="360" src="images/news/img-2-grid.jpg" alt="Чистые пруды" srcset="images/news/img-2-grid@2x.jpg 2x">
+              <img class="info-card__img info-card__img--grid" src="images/news/img-2-grid.jpg" width="674" height="360" alt="Чистые пруды" srcset="images/news/img-2-grid@2x.jpg 2x">
             </picture>
             <div class="info-card__head">
               <h2 class="info-card__title">
@@ -333,12 +331,12 @@
             <picture class="info-card__picture">
               <source media="(max-width: 767px)" srcset="images/news/img-3-list-mobile.jpg 1x, images/news/img-3-list-mobile@2x.jpg 2x">
               <source media="(max-width: 1023px)" srcset="images/news/img-3-list-tablet.jpg 1x, images/news/img-3-list-tablet@2x.jpg 2x">
-              <img class="info-card__img" width="340" height="220" src="images/news/img-3-list.jpg" alt="Элитная недвижимость" srcset="images/news/img-3-list@2x.jpg 2x">
+              <img class="info-card__img" src="images/news/img-3-list.jpg" width="340" height="220" alt="Элитная недвижимость" srcset="images/news/img-3-list@2x.jpg 2x">
             </picture>
             <picture class="info-card__picture info-card__picture--grid">
               <source media="(max-width: 767px)" srcset="images/news/img-3-grid-mobile.jpg 1x, images/news/img-3-grid-mobile@2x.jpg 2x">
               <source media="(max-width: 1023px)" srcset="images/news/img-3-grid-tablet.jpg 1x, images/news/img-3-grid-tablet@2x.jpg 2x">
-              <img class="info-card__img info-card__img--grid" width="674" height="360" src="images/news/img-3-grid.jpg" alt="Элитная недвижимость" srcset="images/news/img-3-grid@2x.jpg 2x">
+              <img class="info-card__img info-card__img--grid" src="images/news/img-3-grid.jpg" width="674" height="360" alt="Элитная недвижимость" srcset="images/news/img-3-grid@2x.jpg 2x">
             </picture>
             <div class="info-card__head">
               <h2 class="info-card__title">
@@ -362,12 +360,12 @@
             <picture class="info-card__picture">
               <source media="(max-width: 767px)" srcset="images/news/img-4-list-mobile.jpg 1x, images/news/img-4-list-mobile@2x.jpg 2x">
               <source media="(max-width: 1023px)" srcset="images/news/img-4-list-tablet.jpg 1x, images/news/img-4-list-tablet@2x.jpg 2x">
-              <img class="info-card__img" width="340" height="220" src="images/news/img-4-list.jpg" alt="Двор-сад" srcset="images/news/img-4-list@2x.jpg 2x">
+              <img class="info-card__img" src="images/news/img-4-list.jpg" width="340" height="220" alt="Двор-сад" srcset="images/news/img-4-list@2x.jpg 2x">
             </picture>
             <picture class="info-card__picture info-card__picture--grid">
               <source media="(max-width: 767px)" srcset="images/news/img-4-grid-mobile.jpg 1x, images/news/img-4-grid-mobile@2x.jpg 2x">
               <source media="(max-width: 1023px)" srcset="images/news/img-4-grid-tablet.jpg 1x, images/news/img-4-grid-tablet@2x.jpg 2x">
-              <img class="info-card__img info-card__img--grid" width="674" height="360" src="images/news/img-4-grid.jpg" alt="Двор-сад" srcset="images/news/img-4-grid@2x.jpg 2x">
+              <img class="info-card__img info-card__img--grid" src="images/news/img-4-grid.jpg" width="674" height="360" alt="Двор-сад" srcset="images/news/img-4-grid@2x.jpg 2x">
             </picture>
             <div class="info-card__head">
               <h2 class="info-card__title">
@@ -392,12 +390,12 @@
             <picture class="info-card__picture">
               <source media="(max-width: 767px)" srcset="images/news/img-5-list-mobile.jpg 1x, images/news/img-5-list-mobile@2x.jpg 2x">
               <source media="(max-width: 1023px)" srcset="images/news/img-5-list-tablet.jpg 1x, images/news/img-5-list-tablet@2x.jpg 2x">
-              <img class="info-card__img" width="340" height="220" src="images/news/img-5-list.jpg" alt="Барельефы" srcset="images/news/img-5-list@2x.jpg 2x">
+              <img class="info-card__img" src="images/news/img-5-list.jpg" width="340" height="220" alt="Барельефы" srcset="images/news/img-5-list@2x.jpg 2x">
             </picture>
             <picture class="info-card__picture info-card__picture--grid">
               <source media="(max-width: 767px)" srcset="images/news/img-5-grid-mobile.jpg 1x, images/news/img-5-grid-mobile@2x.jpg 2x">
               <source media="(max-width: 1023px)" srcset="images/news/img-5-grid-tablet.jpg 1x, images/news/img-5-grid-tablet@2x.jpg 2x">
-              <img class="info-card__img info-card__img--grid" width="674" height="360" src="images/news/img-5-grid.jpg" alt="Барельефы" srcset="images/news/img-5-grid@2x.jpg 2x">
+              <img class="info-card__img info-card__img--grid" src="images/news/img-5-grid.jpg" width="674" height="360" alt="Барельефы" srcset="images/news/img-5-grid@2x.jpg 2x">
             </picture>
             <div class="info-card__head">
               <h2 class="info-card__title">
@@ -422,12 +420,12 @@
             <picture class="info-card__picture">
               <source media="(max-width: 767px)" srcset="images/news/img-6-list-mobile.jpg 1x, images/news/img-6-list-mobile@2x.jpg 2x">
               <source media="(max-width: 1023px)" srcset="images/news/img-6-list-tablet.jpg 1x, images/news/img-6-list-tablet@2x.jpg 2x">
-              <img class="info-card__img" width="340" height="220" src="images/news/img-6-list.jpg" alt="Бионические фасады" srcset="images/news/img-6-list@2x.jpg 2x">
+              <img class="info-card__img" src="images/news/img-6-list.jpg" width="340" height="220" alt="Бионические фасады" srcset="images/news/img-6-list@2x.jpg 2x">
             </picture>
             <picture class="info-card__picture info-card__picture--grid">
               <source media="(max-width: 767px)" srcset="images/news/img-6-grid-mobile.jpg 1x, images/news/img-6-grid-mobile@2x.jpg 2x">
               <source media="(max-width: 1023px)" srcset="images/news/img-6-grid-tablet.jpg 1x, images/news/img-6-grid-tablet@2x.jpg 2x">
-              <img class="info-card__img info-card__img--grid" width="674" height="360" src="images/news/img-6-grid.jpg" alt="Бионические фасады" srcset="images/news/img-6-grid@2x.jpg 2x">
+              <img class="info-card__img info-card__img--grid" src="images/news/img-6-grid.jpg" width="674" height="360" alt="Бионические фасады" srcset="images/news/img-6-grid@2x.jpg 2x">
             </picture>
             <div class="info-card__head">
               <h2 class="info-card__title">

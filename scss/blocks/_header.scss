@@ -10,7 +10,6 @@
   z-index: 30;
 
   &--active {
-    //position: relative;
     background-color: $color-blue-charcoa;
     color: $color-white;
     border-bottom: 1px solid $color-border-inverse;
@@ -34,12 +33,8 @@
 
     .header__burger-menu  {
       display: block;
-      //position: absolute;
       border-top: 1px solid $color-border-inverse;
       width: 100%;
-      /* bottom: -1428px;
-      left: 0; */
-      //height: calc(100vh - 80px);
     }
 
 

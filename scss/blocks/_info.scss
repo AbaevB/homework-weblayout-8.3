@@ -2,8 +2,9 @@
   padding: 20px 20px 0;
 
   &__top  {
+    position: relative;
     padding: 20px 0;
-     border-bottom: 1px solid $color-iron;
+    border-bottom: 1px solid $color-iron;
   }
 
   &__form {
@@ -72,7 +73,7 @@
       overflow: hidden;
     }
 
-    .info__list-item:not(:first-child) .info-card {
+    .info__list-item:not(:first-child) {
       border-top: 1px solid $color-iron;
     }
 
