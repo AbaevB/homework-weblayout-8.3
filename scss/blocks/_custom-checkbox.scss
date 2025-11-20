@@ -28,7 +28,11 @@
     color: $color-white;
   }
 
-
+  &--all  {
+    .custom-checkbox__hidden-text {
+      display: none;
+    }
+  }
 
 
 
