@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
+
   const gridViewEl = document.querySelector('#grid-view');
   const listViewEl = document.querySelector('#list-view');
   const infoTopEl = document.querySelector('#info-top');
   const listEl = document.querySelector('#list');
   const listItemEls = document.querySelectorAll('.info__list-item');
-  console.log(listItemEls);
   const cardEls = document.querySelectorAll('.info-card');
 
   gridViewEl.addEventListener('click', () => {
