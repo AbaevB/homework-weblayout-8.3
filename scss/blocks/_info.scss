@@ -63,11 +63,17 @@
 
   &__list {
     @include list-reset;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 380px);
+    //flex-direction: column;
+
+    @media(max-width: 1400px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 506px);
+    }
 
     &-item  {
-      height: 380px;
       overflow: hidden;
     }
 
@@ -78,11 +84,9 @@
     &--grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 360px);
       gap: 20px;
 
-      .info__list-item--grid  {
-        height: 100%;
-      }
 
       .info__list-item--grid:not(:first-child) {
       border-top: unset;
