@@ -19,7 +19,7 @@
       color: $color-white;
     }
 
-    .header__logo-link  {
+    .header__logo-link {
       color: $color-white;
     }
 
@@ -31,7 +31,7 @@
       color: $color-white;
     }
 
-    .header__burger-menu  {
+    .header__burger-menu {
       display: block;
       border-top: 1px solid $color-border-inverse;
       width: 100%;
@@ -102,7 +102,7 @@
       width: 47px;
     }
 
-    &--close{
+    &--close {
       display: none;
     }
   }
@@ -209,6 +209,44 @@
   &__burger-menu {
     display: none;
     background-color: $color-blue-charcoa;
+    color: $color-white-50;
+    padding-top: 80px;
+  }
+
+  &--open {
+    display: flex;
+  }
+
+  &__burger-menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  &__menu-list,
+  &__menu-sublist {
+    @include list-reset;
+  }
+
+
+  &__menu-link  {
+    display: block;
+  color: $color-white-50;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 26px;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus-visible {
     color: $color-white;
     position: absolute;
     top: 100%;
@@ -225,6 +263,7 @@
       display: block;
     }
   }
+<<<<<<< HEAD
 
   &__nav {
     margin-bottom: 40px;
@@ -301,4 +340,49 @@
     }
   }
 
+=======
+  }
+
+  &__menu-list {
+    display: flex;
+    gap: 90px;
+
+    @include vp-1023 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px 40px; // горизонталь 60px, вертикаль 40px
+      width: 100%;
+    }
+
+
+  }
+
+  &__menu-item:nth-child(1) {
+    @include vp-1023 {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+
+  &__menu-item:nth-child(2) {
+    @include vp-1023 {
+      grid-column: 1;
+      grid-row: 2;
+      justify-self: start; // прижимаем к левому краю
+    }
+  }
+
+  &__menu-item:nth-child(3) {
+    @include vp-1023 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  }
+
+
+
+  &__menu-subitem:not(:last-child) {
+    margin-bottom: 40px;
+  }
+>>>>>>> 16d5293 (burger-menu functional)
 }
