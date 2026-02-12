@@ -19,7 +19,7 @@
       color: $color-white;
     }
 
-    .header__logo-link {
+    .header__logo-link  {
       color: $color-white;
     }
 
@@ -31,7 +31,7 @@
       color: $color-white;
     }
 
-    .header__burger-menu {
+    .header__burger-menu  {
       display: block;
       border-top: 1px solid $color-border-inverse;
       width: 100%;
@@ -102,7 +102,7 @@
       width: 47px;
     }
 
-    &--close {
+    &--close{
       display: none;
     }
   }
@@ -209,26 +209,27 @@
   &__burger-menu {
     display: none;
     background-color: $color-blue-charcoa;
-    color: $color-white-50;
-    padding-top: 80px;
-  }
+    color: $color-white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 40px 0 60px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
-  &--open {
-    display: flex;
-  }
+    @include vp-767 {
+      padding: 20px 0 40px;
+    }
 
-  &__burger-menu-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    &--open {
+      display: block;
+    }
   }
 
   &__nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    margin-bottom: 40px;
 
+<<<<<<< HEAD
 
 
   &__menu-list,
@@ -341,29 +342,81 @@
   }
 
 =======
+=======
+    @include vp-767 {
+      margin-bottom: 30px;
+    }
+>>>>>>> 116bf9f (burger menu tadlete)
   }
 
   &__menu-list {
+    @include list-reset;
+    font-size: 18px;
+    line-height: 26px;
+    color: $color-white;
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  &__menu-sublist {
+    @include list-reset;
+    margin: 16px 0;
+
+    .header__menu-item:first-child & {
+      margin-top: 0;
+    }
+  }
+
+  &__menu-subitem {
+    margin: 8px 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__menu-link {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+
+    &:hover,
+    &:focus-visible {
+      opacity: 0.7;
+    }
+  }
+
+  // Социальные сети
+  .social {
     display: flex;
-    gap: 90px;
+    gap: 30px;
+    justify-content: center;
 
-    @include vp-1023 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 60px 40px; // горизонталь 60px, вертикаль 40px
-      width: 100%;
+    @include vp-767 {
+      gap: 20px;
     }
 
+    &__link {
+      color: $color-white;
+      transition: opacity 0.3s ease;
 
-  }
+      &:hover,
+      &:focus-visible {
+        opacity: 0.7;
+      }
+    }
 
-  &__menu-item:nth-child(1) {
-    @include vp-1023 {
-      grid-column: 1;
-      grid-row: 1;
+    &__icon {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
     }
   }
 
+<<<<<<< HEAD
   &__menu-item:nth-child(2) {
     @include vp-1023 {
       grid-column: 1;
@@ -385,4 +438,6 @@
     margin-bottom: 40px;
   }
 >>>>>>> 16d5293 (burger-menu functional)
+=======
+>>>>>>> 116bf9f (burger menu tadlete)
 }

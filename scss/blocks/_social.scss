@@ -1,28 +1,26 @@
 .social {
   @include list-reset;
   display: flex;
-  flex-direction: column;      // вертикальное расположение
+  flex-direction: column;
   align-items: center;
-  gap: 60px;                   // отступ между элементами на десктопе
+  gap: 60px;
 
-  // Адаптив: планшет и мобильные
-  @include vp-1023 {
-    gap: 50px;                 // уменьшаем отступ
+  max-width: 24px;
+
+  @include vp-1023  {
+    gap: 50px;
   }
 
   &__link {
     color: $color-social;
-    transition: color 0.3s ease-in-out; // исправлено: было 0.3ms → должно быть 0.3s
+    transition: color 0.3ms ease-in-out;
 
-    &:hover,
+    &:hover {
+      color: $color-ecru-white;
+    }
+
     &:focus-visible {
       color: $color-ecru-white;
     }
-  }
-
-  &__icon {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;        // иконка принимает цвет текста
   }
 }
