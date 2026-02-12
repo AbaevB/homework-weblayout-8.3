@@ -1,14 +1,37 @@
-.header {
+// scss/blocks/_header.scss
 
+.header {
+  $root: &;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #fff;
-  border-bottom: 1px solid #e6e6e6; // $color-gainsboro
+  border-bottom: 1px solid #e6e6e6;
   z-index: 30;
 
+  &--active {
+    background-color: $color-blue-charcoa;
+    border-bottom-color: darken($color-blue-charcoa, 10%);
+    color: $color-white;
 
+    .header__link,
+    .header__phone,
+    .header__logo-link,
+    .header__page {
+      color: $color-white;
+    }
+
+    .header__menu-icon {
+      &:not(.header__menu-icon--close) {
+        display: none;
+      }
+
+      &--close {
+        display: block;
+      }
+    }
+  }
 
   &__content {
     display: grid;
@@ -18,23 +41,21 @@
     padding: 20px 0 19px;
   }
 
-  &__left-col,
-  &__right-col {
+  &__left-col {
     display: flex;
     align-items: center;
-  }
-
-  &__left-col {
     gap: 70px;
   }
 
-  &__right-col  {
+  &__right-col {
+    display: flex;
+    align-items: center;
     justify-content: flex-end;
     gap: 40px;
   }
 
-   &__logo-link {
-    color: #1c1c1c; // $color-blue-charcoa
+  &__logo-link {
+    color: #1c1c1c;
     height: 26px;
     width: 114px;
     display: flex;
@@ -83,20 +104,26 @@
   }
 
   &__menu {
-  width: 60px;
-  height: 40px;
-  background: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  display: flex; /* или inline-flex */
-  align-items: center;
-  justify-content: center;
+    width: 60px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  @include vp-1023 {
-    margin-left: auto; /* если нужно выровнять вправо на мобильных */
+    &--active  {
+      color: $color-white;
+    }
+
+    @include vp-1023 {
+      margin-left: auto;
+    }
   }
-}
+
+
 
   &__menu-icon {
     width: 60px;
@@ -107,16 +134,72 @@
     display: none;
   }
 
+  &__burger-menu {
+    display: none;
+    background-color: $color-blue-charcoa;
+    color: $color-white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 40px 0 60px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 100;
 
+    @include vp-767 {
+      padding: 20px 0 40px;
+    }
 
+    &--open {
+      display: block;
+    }
+  }
 
+  &__nav {
+    margin-bottom: 40px;
 
+    @include vp-767 {
+      margin-bottom: 30px;
+    }
+  }
 
+  &__menu-list {
+    @include list-reset;
+    font-size: 18px;
+    line-height: 26px;
+    color: $color-white;
 
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
 
+  &__menu-sublist {
+    @include list-reset;
+    margin: 16px 0;
 
+    .header__menu-item:first-child & {
+      margin-top: 0;
+    }
+  }
 
- &__burger-menu {
-  display: none;
- }
+  &__menu-subitem {
+    margin: 8px 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__menu-link {
+    color: $color-white-50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-white;
+    }
+  }
 }
